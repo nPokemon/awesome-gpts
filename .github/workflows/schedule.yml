@@ -33,6 +33,7 @@ jobs:
 
     - name: Commit and push if changed
       run: |
+        set -x
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
         git add -A
@@ -42,3 +43,5 @@ jobs:
           git commit -m "Auto update from GitHub Action"
           git push
         fi
+      env: # Set the secret as an input
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
