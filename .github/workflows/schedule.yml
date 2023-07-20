@@ -44,4 +44,4 @@ jobs:
           git push || echo "git push command failed"
         fi
       env: # Set the secret as an input
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
