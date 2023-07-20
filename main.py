@@ -1,10 +1,8 @@
 import base64
-import json
 import os
 import shutil
 from datetime import datetime, timedelta
 
-import markdown
 import requests
 
 # GitHub API的基础URL
@@ -56,7 +54,14 @@ def archive_previous_readme():
         shutil.move('README.md', f'archived/README_{formatted_date}.md')
 
 
+def load_blacklist():
+    with open('blacklist.txt', 'r') as f:
+        return [line.strip() for line in f]
+
+
 def get_repository_data(query, max_repos=500):
+    blacklist = load_blacklist()
+
     # 设置分页参数
     page = 1
     per_page = 100  # 最大值
@@ -77,9 +82,14 @@ def get_repository_data(query, max_repos=500):
 
             # 遍历返回的仓库
             for repo in data['items']:
+                if repo['full_name'] in blacklist:
+                    continue  # 跳过黑名单中的仓库
+
                 # 如果已经达到了max_repos条记录，跳出循环
                 if count >= max_repos:
                     break
+
+                last_updated = datetime.strptime(repo['updated_at'], '%Y-%m-%dT%H:%M:%SZ')
 
                 # 解析仓库数据
                 repo_data = {
@@ -87,7 +97,7 @@ def get_repository_data(query, max_repos=500):
                     'name': repo['name'],
                     'description': repo['description'],
                     'stars': repo['stargazers_count'],
-                    'last_updated': repo['updated_at'],
+                    'last_updated': last_updated.strftime('%Y-%m-%d'),
                     'language': repo['language'],
                     'readme': get_readme_content(repo['full_name'])
                 }
@@ -118,25 +128,27 @@ def main():
     for query in queries:
         all_parsed_data.extend(get_repository_data(query))
 
-    with open('data.json', 'w') as f:
-        f.write(json.dumps(all_parsed_data))
 
-    # 创建Markdown文档
-    md = markdown.Markdown()
-
+    # 用于存储Markdown文本
     # 用于存储Markdown文本
     markdown_text = ''
 
+    # 添加开头部分
+    markdown_text += '# Awesome GPT Repositories\n\n'
+    markdown_text += 'This repository provides a curated list of GitHub repositories related to GPT. \
+    These repositories are automatically collected and updated daily based on the following criteria:\n\n'
+    markdown_text += '1. The repository name or description contains "GPT" (case-insensitive).\n'
+    markdown_text += '2. The repositories are sorted by the number of stars in descending order.\n\n'
+    markdown_text += 'Last updated: ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '\n\n'
+
+    # 添加Markdown表格的头部
+    markdown_text += '| Name | Description | Language | Star|Last updated |\n'
+    markdown_text += '| ---- | ----------- | -------- | ----|------------ |\n'
+
     # 遍历解析后的数据
     for repo in all_parsed_data:
-        # 添加到Markdown文本
-        markdown_text += f"## {repo['name']}\n"
-        markdown_text += f"**Description**: {repo['description']}\n"
-        markdown_text += f"**Stars**: {repo['stars']}\n"
-        markdown_text += f"**Last updated**: {repo['last_updated']}\n"
-        markdown_text += f"**Language**: {repo['language']}\n"
-        markdown_text += f"**README**:\n\n{repo['readme']}\n"
-        markdown_text += '\n'
+        # 添加到Markdown表格
+        markdown_text += f"| [{repo['name']}]({repo['url']}) | {repo['description']} | {repo['stars']}| {repo['language']} | {repo['last_updated']} |\n"
 
     # 将Markdown文本写入README文件
     with open('README.md', 'w') as f:
