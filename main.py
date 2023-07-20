@@ -82,7 +82,7 @@ def get_repository_data(query, max_repos=500):
 
             # 遍历返回的仓库
             for repo in data['items']:
-                if repo['full_name'] in blacklist:
+                if repo['html_url'] in blacklist:
                     continue  # 跳过黑名单中的仓库
 
                 # 如果已经达到了max_repos条记录，跳出循环
