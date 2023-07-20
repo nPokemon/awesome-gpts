@@ -59,6 +59,13 @@ def load_blacklist():
         return [line.strip() for line in f]
 
 
+def clean_content(content: str):
+    if content is None:
+        return ""
+    content = content.replace("|", " ")
+    return content
+
+
 def get_repository_data(query, max_repos=500):
     blacklist = load_blacklist()
 
@@ -95,7 +102,7 @@ def get_repository_data(query, max_repos=500):
                 repo_data = {
                     'url': repo['html_url'],
                     'name': repo['name'],
-                    'description': repo['description'],
+                    'description': clean_content(repo['description']),
                     'stars': repo['stargazers_count'],
                     'last_updated': last_updated.strftime('%Y-%m-%d'),
                     'language': repo['language'],
@@ -128,7 +135,6 @@ def main():
     for query in queries:
         all_parsed_data.extend(get_repository_data(query))
 
-
     # 用于存储Markdown文本
     # 用于存储Markdown文本
     markdown_text = ''
@@ -142,13 +148,13 @@ def main():
     markdown_text += 'Last updated: ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '\n\n'
 
     # 添加Markdown表格的头部
-    markdown_text += '| Name | Description | Language | Star|Last updated |\n'
-    markdown_text += '| ---- | ----------- | -------- | ----|------------ |\n'
+    markdown_text += '| Name | Description | Language | Stars|Last updated |\n'
+    markdown_text += '| ---- | ----------- | -------- | -----|------------ |\n'
 
     # 遍历解析后的数据
     for repo in all_parsed_data:
         # 添加到Markdown表格
-        markdown_text += f"| [{repo['name']}]({repo['url']}) | {repo['description']} | {repo['stars']}| {repo['language']} | {repo['last_updated']} |\n"
+        markdown_text += f"| [{repo['name']}]({repo['url']}) | {repo['description']} | {repo['language']} | {repo['stars']} |{repo['last_updated']} |\n"
 
     # 将Markdown文本写入README文件
     with open('README.md', 'w') as f:
