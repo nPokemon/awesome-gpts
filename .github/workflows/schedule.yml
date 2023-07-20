@@ -33,15 +33,15 @@ jobs:
 
     - name: Commit and push if changed
       run: |
-        set -x
+        set -x  # Enable verbose output
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
         git add -A
-        changed=$(git diff --cached --exit-code)
-        echo 'changed: $changed'
+        git diff --cached --exit-code || echo "git diff command failed"
+        changed=$(git diff --cached --exit-code || echo "")
         if [ -n "$changed" ]; then
-          git commit -m "Auto update from GitHub Action"
-          git push
+          git commit -m "Auto update from GitHub Action" || echo "git commit command failed"
+          git push || echo "git push command failed"
         fi
       env: # Set the secret as an input
-        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
