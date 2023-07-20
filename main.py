@@ -1,9 +1,11 @@
+import base64
 import json
 import os
+import shutil
+from datetime import datetime, timedelta
 
-import requests
-import base64
 import markdown
+import requests
 
 # GitHub API的基础URL
 BASE_URL = 'https://api.github.com/search/repositories'
@@ -38,6 +40,22 @@ def get_readme_content(full_name):
         return None
 
 
+def archive_previous_readme():
+    # 判断README.md是否存在
+    if os.path.isfile('README.md'):
+        # 获取当前日期的前一天
+        previous_date = datetime.now() - timedelta(days=1)
+        # 格式化日期
+        formatted_date = previous_date.strftime('%Y-%m-%d')
+
+        # 创建archived文件夹，如果不存在
+        if not os.path.isdir('archived'):
+            os.mkdir('archived')
+
+        # 移动并重命名文件
+        shutil.move('README.md', f'archived/README_{formatted_date}.md')
+
+
 def get_repository_data(query, max_repos=500):
     # 设置分页参数
     page = 1
@@ -49,7 +67,8 @@ def get_repository_data(query, max_repos=500):
 
     while True:
         # 发送请求
-        response = requests.get(f'{BASE_URL}?q={query}&page={page}&per_page={per_page}', headers=headers)
+        response = requests.get(f'{BASE_URL}?q={query}&sort=stars&order=desc&page={page}&per_page={per_page}',
+                                headers=headers)
 
         # 如果请求成功
         if response.status_code == 200:
@@ -93,31 +112,37 @@ def get_repository_data(query, max_repos=500):
     return all_parsed_data
 
 
-# 遍历每个搜索规则，获取仓库数据
-all_parsed_data = []
-for query in queries:
-    all_parsed_data.extend(get_repository_data(query))
+def main():
+    # 遍历每个搜索规则，获取仓库数据
+    all_parsed_data = []
+    for query in queries:
+        all_parsed_data.extend(get_repository_data(query))
 
-with open('data.json', 'w') as f:
-    f.write(json.dumps(all_parsed_data))
+    with open('data.json', 'w') as f:
+        f.write(json.dumps(all_parsed_data))
 
-# 创建Markdown文档
-md = markdown.Markdown()
+    # 创建Markdown文档
+    md = markdown.Markdown()
 
-# 用于存储Markdown文本
-markdown_text = ''
+    # 用于存储Markdown文本
+    markdown_text = ''
 
-# 遍历解析后的数据
-for repo in all_parsed_data:
-    # 添加到Markdown文本
-    markdown_text += f"## {repo['name']}\n"
-    markdown_text += f"**Description**: {repo['description']}\n"
-    markdown_text += f"**Stars**: {repo['stars']}\n"
-    markdown_text += f"**Last updated**: {repo['last_updated']}\n"
-    markdown_text += f"**Language**: {repo['language']}\n"
-    markdown_text += f"**README**:\n\n{repo['readme']}\n"
-    markdown_text += '\n'
+    # 遍历解析后的数据
+    for repo in all_parsed_data:
+        # 添加到Markdown文本
+        markdown_text += f"## {repo['name']}\n"
+        markdown_text += f"**Description**: {repo['description']}\n"
+        markdown_text += f"**Stars**: {repo['stars']}\n"
+        markdown_text += f"**Last updated**: {repo['last_updated']}\n"
+        markdown_text += f"**Language**: {repo['language']}\n"
+        markdown_text += f"**README**:\n\n{repo['readme']}\n"
+        markdown_text += '\n'
 
-# 将Markdown文本写入README文件
-with open('README.md', 'w') as f:
-    f.write(markdown_text)
+    # 将Markdown文本写入README文件
+    with open('README.md', 'w') as f:
+        f.write(markdown_text)
+
+
+if __name__ == '__main__':
+    archive_previous_readme()
+    main()
