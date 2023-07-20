@@ -29,7 +29,7 @@ jobs:
     - name: Run script
       run: python main.py
       env: # Set the secret as an input
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
 
     - name: Commit and push if changed
       run: |
@@ -37,6 +37,7 @@ jobs:
         git config --global user.email 'action@github.com'
         git add -A
         changed=$(git diff --cached --exit-code)
+        echo 'changed: $changed'
         if [ -n "$changed" ]; then
           git commit -m "Auto update from GitHub Action"
           git push
