@@ -141,6 +141,9 @@ def main():
 
     # 添加开头部分
     markdown_text += '# Awesome GPT Repositories\n\n'
+    markdown_text += '[![Commit and push changes](https://github.com/guangtouwangba/awesome-GPTRepos/actions' \
+                     '/workflows/schedule.yml/badge.svg)](' \
+                     'https://github.com/guangtouwangba/awesome-GPTRepos/actions/workflows/schedule.yml)\n\n'
     markdown_text += 'This repository provides a curated list of GitHub repositories related to GPT. \
     These repositories are automatically collected and updated daily based on the following criteria:\n\n'
     markdown_text += '1. The repository name or description contains "GPT" (case-insensitive).\n'
