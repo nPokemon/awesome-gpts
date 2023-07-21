@@ -5,7 +5,10 @@ from datetime import datetime, timedelta
 
 import requests
 
-# GitHub API的基础URL
+from cryptography.fernet import Fernet
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+
 BASE_URL = 'https://api.github.com/search/repositories'
 README_URL_TEMPLATE = 'https://api.github.com/repos/{owner}/{repo}/readme'
 
@@ -23,6 +26,34 @@ headers = {
     'Authorization': f'token {TOKEN}',
     'Accept': 'application/vnd.github.v3+json'
 }
+
+
+def generate_key():
+    password_provided = os.getenv('MY_SECRET_KEY')  # This should be obtained from an environment variable
+    password = password_provided.encode()  # Convert to type bytes
+    salt = b'salt_'  # CHANGE THIS - recommend using a key from os.urandom(16), must be of type bytes
+    kdf = PBKDF2HMAC(
+        algorithm=hashes.SHA256(),
+        length=32,
+        salt=salt,
+        iterations=100000
+    )
+    key = base64.urlsafe_b64encode(kdf.derive(password))  # Can only use kdf once
+    return key
+
+
+def encrypt(message: str):
+    key = generate_key()
+    f = Fernet(key)
+    encrypted = f.encrypt(message.encode())
+    return encrypted
+
+
+def decrypt(token):
+    key = generate_key()
+    f = Fernet(key)
+    decrypted = f.decrypt(token).decode()
+    return decrypted
 
 
 def get_readme_content(full_name):
@@ -56,7 +87,7 @@ def archive_previous_readme():
 
 def load_blacklist():
     with open('blacklist.txt', 'r') as f:
-        return [line.strip() for line in f]
+        return [decrypt(line.strip()) for line in f]
 
 
 def clean_content(content: str):
