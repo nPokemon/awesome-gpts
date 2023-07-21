@@ -32,6 +32,7 @@ jobs:
       run: python main.py
       env: # Set the secret as an input
         GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
 
     - name: Commit and push if changed
       run: |
