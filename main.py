@@ -9,6 +9,8 @@ from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
+from tools.translator import summarization
+
 BASE_URL = 'https://api.github.com/search/repositories'
 README_URL_TEMPLATE = 'https://api.github.com/repos/{owner}/{repo}/readme'
 
@@ -97,7 +99,7 @@ def clean_content(content: str):
     return content
 
 
-def get_repository_data(query, max_repos=500):
+def get_repository_data(query, max_repos=10):
     blacklist = load_blacklist()
 
     # 设置分页参数
@@ -187,8 +189,10 @@ def main():
 
     # 遍历解析后的数据
     for repo in all_parsed_data:
+        # summary
+        summary = summarization(repo['description'], repo['readme'])
         # 添加到Markdown表格
-        markdown_text += f"| [{repo['name']}]({repo['url']}) | {repo['description']} | {repo['language']} | {repo['stars']} |{repo['last_updated']} |\n"
+        markdown_text += f"| [{repo['name']}]({repo['url']}) | {summary} | {repo['language']} | {repo['stars']} |{repo['last_updated']} |\n"
 
     # 将Markdown文本写入README文件
     with open('README.md', 'w') as f:
