@@ -15,8 +15,23 @@ chat = ChatOpenAI(
 )
 
 
-class ResponseSchema(BaseModel):
+class TranslateResponseSchema(BaseModel):
     result: str = Field(..., description="the translated value")
+
+    @classmethod
+    def schema(cls, by_alias=True):
+        schema = super().schema(by_alias)
+        schema.pop('title', None)
+        return schema
+
+    @classmethod
+    def schema_json(cls, by_alias=True, **dumps_kwargs):
+        schema_str = json.dumps(cls.schema(by_alias), **dumps_kwargs)
+        return json.loads(schema_str)
+
+
+class SummarizationResponseSchema(BaseModel):
+    result: str = Field(..., description="the summarized value")
 
     @classmethod
     def schema(cls, by_alias=True):
@@ -46,7 +61,7 @@ def translate(text: str, lang: str) -> str:
         {
             "name": "print_translation",
             "description": "Print the translation for the given text.",
-            "parameters": ResponseSchema.schema_json()
+            "parameters": TranslateResponseSchema.schema_json()
         }
     ]
 
@@ -58,7 +73,6 @@ def translate(text: str, lang: str) -> str:
     response = chat_completion(response.content, functions=function)
     result = eval(response['function_call']['arguments'])['result']
     return result
-
 
 
 def classification(summary: str) -> dict:
@@ -77,32 +91,21 @@ def summarization(description: str, readme: str) -> str:
     your summary should in the following format:
     {{'res': 'your summary'}}
     """
-    message = ChatPromptTemplate.from_template(prompt_template)
-    response_schema = ResponseSchema(
-        name="res",
-        description="your summary",
-        type="dict",
-    )
-    output_parser = StructuredOutputParser.from_response_schemas([response_schema])
-    format_instructions = output_parser.get_format_instructions()
-    prompt = message.format_messages(
-        description=description,
-        readme=readme,
-        format_instructions=format_instructions,
-    )
-    if len(prompt) > 1000:
-        prompt = prompt[:1000]
-    print(len(prompt))
-    res = chat(prompt)
-    try:
-        print(res.content)
-        res = output_parser.parse(res.content)
-        return res["res"]
-    except OutputParserException as exc:
-        print(exc)
-        fix_parse = OutputFixingParser.from_llm(parser=output_parser, llm=chat)
-        res = fix_parse.parse(res.content)
-        return res["res"]
+    prompt = prompt_template.format(description=description, readme=readme)
+    if len(prompt) > 2000:
+        prompt = prompt[:2000]
+    # get the response from the chat
+    response = chat_completion(prompt)
+    # parse the response
+    response = chat_completion(response.content, functions=[
+        {
+            "name": "print_summary",
+            "description": "Print the summary for the given text.",
+            "parameters": SummarizationResponseSchema.schema_json(),
+        }
+    ])
+    result = eval(response['function_call']['arguments'])['result']
+    return result
 
 
 if __name__ == '__main__':
