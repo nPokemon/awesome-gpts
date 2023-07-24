@@ -54,48 +54,35 @@ def retry(exceptions, tries=3, delay=1, backoff=2):
     return decorator
 
 
-@retry(Exception, tries=3, delay=1, backoff=2)
+# @retry(Exception, tries=3, delay=1, backoff=2)
 def chat_completion(prompt: str, model_name: str = None, max_token=4000, system_prompt: str = None,
-                    functions: list = None,
-                    function_call: dict = None):
+                    functions: list = None):
     if model_name is None:
         model_name = 'gpt-3.5-turbo'
-    token_of_prompt = num_tokens_from_string(prompt, 'gpt-3.5-turbo')
-    if token_of_prompt > max_token:
-        raise ValueError(f"prompt token {token_of_prompt} > max_token {max_token}")
-    max_token -= token_of_prompt
     if system_prompt is None:
         system_prompt = "You are a ai assistant, you can answer the user's question."
-    completion = openai.ChatCompletion.create(
-        functions=functions,
-        function_call=function_call,
-        stream=True,
-        model=model_name,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": prompt}
-        ]
-    )
+    if functions is None:
+        completion = openai.ChatCompletion.create(
+            model=model_name,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}
+            ]
+        )
 
+        return completion["choices"][0]["message"]
 
-    start_time = time.time()
-    result = ''
-    # create variables to collect the stream of events
-    collected_events = []
-    completion_text = ''
-    # iterate through the stream of events
-    for event in completion:
-        event_time = time.time() - start_time  # calculate the time delay of the event
-        collected_events.append(event)  # save the event response
-        event_text = event['choices'][0]['message']  # extract the text
-        completion_text += event_text  # append the text
-        print(f"Text received: {event_text} ({event_time:.2f} seconds after request)")  # print the delay and text
-        event_token = num_tokens_from_string(event_text, model_name)
-        if event_token > max_token:
-            break
-        max_token -= event_token
-        result += event_text
-    return result
+    else:
+        completion = openai.ChatCompletion.create(
+            functions=functions,
+            function_call='auto',
+            model=model_name,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        return completion["choices"][0]["message"]
 
 
 def num_tokens_from_string(string: str, encoding_name: str) -> int:

@@ -1,8 +1,10 @@
+import json
+
 from langchain.chat_models import ChatOpenAI
 from langchain.output_parsers import ResponseSchema, StructuredOutputParser, OutputFixingParser
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import OutputParserException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from tools.chat import chat_completion
 
@@ -14,7 +16,18 @@ chat = ChatOpenAI(
 
 
 class ResponseSchema(BaseModel):
-    translations: str
+    result: str = Field(..., description="the translated value")
+
+    @classmethod
+    def schema(cls, by_alias=True):
+        schema = super().schema(by_alias)
+        schema.pop('title', None)
+        return schema
+
+    @classmethod
+    def schema_json(cls, by_alias=True, **dumps_kwargs):
+        schema_str = json.dumps(cls.schema(by_alias), **dumps_kwargs)
+        return json.loads(schema_str)
 
 
 def translate(text: str, lang: str) -> str:
@@ -33,16 +46,19 @@ def translate(text: str, lang: str) -> str:
         {
             "name": "print_translation",
             "description": "Print the translation for the given text.",
-            "parameters": ResponseSchema.schema()
+            "parameters": ResponseSchema.schema_json()
         }
     ]
-    function_call = {
-        "name": "print_translation",
-    }
 
     message = prompt_template.format(text=text, lang=lang)
-    res = chat_completion(message, functions=function, function_call=function_call)
-    return res
+    # get the response from the chat
+    response = chat_completion(message)
+
+    # parse the response
+    response = chat_completion(response.content, functions=function)
+    result = eval(response['function_call']['arguments'])['result']
+    return result
+
 
 
 def classification(summary: str) -> dict:
