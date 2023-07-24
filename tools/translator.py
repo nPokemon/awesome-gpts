@@ -79,7 +79,7 @@ def classification(summary: str) -> dict:
     pass
 
 
-@retry(Exception, tries=3, delay=1, backoff=2)
+@retry(Exception, tries=5, delay=1, backoff=5)
 def summarization(description: str, readme: str) -> str:
     """Summarize the description and readme of the repo."""
     prompt_template = """
