@@ -106,8 +106,11 @@ def summarization(description: str, readme: str) -> str:
         }
     ])
     print(response)
-    result = eval(response['function_call']['arguments'])['result']
-    return result
+    if response.get("function_call"):
+        result = eval(response['function_call']['arguments'])['result']
+        return result
+    else:
+        return description
 
 
 if __name__ == '__main__':
