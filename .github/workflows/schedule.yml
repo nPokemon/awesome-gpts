@@ -33,6 +33,7 @@ jobs:
       env: # Set the secret as an input
         GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         MY_SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
     - name: Commit and push if changed
       run: |

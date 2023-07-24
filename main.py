@@ -99,7 +99,7 @@ def clean_content(content: str):
     return content
 
 
-def get_repository_data(query, max_repos=1):
+def get_repository_data(query, max_repos=500):
     blacklist = load_blacklist()
 
     # 设置分页参数

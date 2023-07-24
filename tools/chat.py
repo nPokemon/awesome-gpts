@@ -1,13 +1,14 @@
+import logging
 import os
+import time
+from functools import wraps
 
 import openai
 import tiktoken
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-import time
-from functools import wraps
-import logging
+
 
 # 创建日志记录器
 logger = logging.getLogger(__name__)
