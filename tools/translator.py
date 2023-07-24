@@ -6,7 +6,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.schema import OutputParserException
 from pydantic import BaseModel, Field
 
-from tools.chat import chat_completion
+from tools.chat import chat_completion, retry
 
 chat = ChatOpenAI(
     model_name='gpt-3.5-turbo',
@@ -31,7 +31,7 @@ class TranslateResponseSchema(BaseModel):
 
 
 class SummarizationResponseSchema(BaseModel):
-    result: str = Field(..., description="the summarized value")
+    result: str = Field(..., description="the summarized value from value of res")
 
     @classmethod
     def schema(cls, by_alias=True):
@@ -79,6 +79,7 @@ def classification(summary: str) -> dict:
     pass
 
 
+@retry(Exception, tries=3, delay=1, backoff=2)
 def summarization(description: str, readme: str) -> str:
     """Summarize the description and readme of the repo."""
     prompt_template = """
@@ -104,6 +105,7 @@ def summarization(description: str, readme: str) -> str:
             "parameters": SummarizationResponseSchema.schema_json(),
         }
     ])
+    print(response)
     result = eval(response['function_call']['arguments'])['result']
     return result
 

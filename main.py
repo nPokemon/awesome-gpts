@@ -130,6 +130,7 @@ def get_repository_data(query, max_repos=500):
                     break
 
                 last_updated = datetime.strptime(repo['updated_at'], '%Y-%m-%dT%H:%M:%SZ')
+                print(f'Parsing {repo["name"]} {repo["html_url"]}...')
                 summary = summarization(repo['description'], get_readme_content(repo['full_name']))
                 # 解析仓库数据
                 repo_data = {

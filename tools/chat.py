@@ -55,7 +55,7 @@ def retry(exceptions, tries=3, delay=1, backoff=2):
     return decorator
 
 
-# @retry(Exception, tries=3, delay=1, backoff=2)
+@retry(Exception, tries=3, delay=1, backoff=2)
 def chat_completion(prompt: str, model_name: str = None, max_token=4000, system_prompt: str = None,
                     functions: list = None):
     if model_name is None:
