@@ -1,4 +1,4 @@
-cryptography==41.0.1
+cryptography==41.0.2
 langchain==0.0.240
 openai==0.27.8
 pydantic==1.10.10
