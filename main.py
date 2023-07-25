@@ -115,7 +115,7 @@ def get_repository_data(query, max_repos=100):
                                 headers=headers)
 
         print("="*30)
-        print(f"remaining {500 - count} repos")
+        print(f"remaining {max_repos - count} repos")
         print("=" * 30)
         # 如果请求成功
         if response.status_code == 200:
