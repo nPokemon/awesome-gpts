@@ -114,11 +114,11 @@ def get_repository_data(query, max_repos=100):
         response = requests.get(f'{BASE_URL}?q={query}&sort=stars&order=desc&page={page}&per_page={per_page}',
                                 headers=headers)
 
-        print("="*30)
-        print(f"remaining {max_repos - count} repos")
-        print("=" * 30)
         # 如果请求成功
         if response.status_code == 200:
+            print("=" * 30)
+            print(f"remaining {max_repos - count} repos")
+            print("=" * 30)
             # 获取返回的JSON数据
             data = response.json()
 
