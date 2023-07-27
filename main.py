@@ -193,9 +193,9 @@ def main():
     # 遍历解析后的数据
     for repo in all_parsed_data:
         # summary
-        summary = summarization(repo['description'], repo['readme'])
+        # summary = summarization(repo['description'], repo['readme'])
         # 添加到Markdown表格
-        markdown_text += f"| [{repo['name']}]({repo['url']}) | {summary} | {repo['language']} | {repo['stars']} |{repo['last_updated']} |\n"
+        markdown_text += f"| [{repo['name']}]({repo['url']}) | {repo['description']} | {repo['language']} | {repo['stars']} |{repo['last_updated']} |\n"
 
     # 将Markdown文本写入README文件
     with open('README.md', 'w') as f:
