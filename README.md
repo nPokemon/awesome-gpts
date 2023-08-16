@@ -7,107 +7,107 @@ This repository provides a curated list of GitHub repositories related to GPT.  
 1. The repository name or description contains "GPT" (case-insensitive).
 2. The repositories are sorted by the number of stars in descending order.
 
-Last updated: 2023-08-15 02:07:37
+Last updated: 2023-08-16 02:07:38
 
 | Name | Description | Language | Stars|Last updated |
 | ---- | ----------- | -------- | -----|------------ |
-| [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT) | An experimental open-source attempt to make GPT-4 fully autonomous. | Python | 146409 |2023-08-15 |
-| [gpt4all](https://github.com/nomic-ai/gpt4all) | gpt4all: an ecosystem of open-source chatbots trained on a massive collections of clean assistant data including code, stories and dialogue | C++ | 50733 |2023-08-15 |
-| [gpt4free](https://github.com/xtekky/gpt4free) | The official gpt4free repository   various collection of powerful language models | Python | 43978 |2023-08-15 |
-| [gpt-engineer](https://github.com/AntonOsika/gpt-engineer) | Specify what you want it to build, the AI asks for clarification, and then builds it. | Python | 41032 |2023-08-15 |
-| [ChatGPT](https://github.com/lencx/ChatGPT) | 🔮 ChatGPT Desktop Application (Mac, Windows and Linux) | Rust | 40185 |2023-08-15 |
-| [ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web) | A well-designed cross-platform ChatGPT UI (Web / PWA / Linux / Win / MacOS). 一键拥有你自己的跨平台 ChatGPT 应用。 | TypeScript | 39851 |2023-08-15 |
-| [gpt_academic](https://github.com/binary-husky/gpt_academic) | 为ChatGPT/GLM提供图形交互界面，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持清华chatglm2等本地模型。兼容复旦MOSS, llama, rwkv, newbing, claude, claude2等 | Python | 39687 |2023-08-15 |
-| [privateGPT](https://github.com/imartinez/privateGPT) | Interact privately with your documents using the power of GPT, 100% privately, no data leaks | Python | 35784 |2023-08-15 |
-| [ChatGPT](https://github.com/acheong08/ChatGPT) | Reverse engineered ChatGPT API | Python | 27114 |2023-08-15 |
-| [AgentGPT](https://github.com/reworkd/AgentGPT) | 🤖 Assemble, configure, and deploy autonomous AI Agents in your browser. | TypeScript | 25743 |2023-08-15 |
-| [nanoGPT](https://github.com/karpathy/nanoGPT) | The simplest, fastest repository for training/finetuning medium-sized GPTs. | Python | 23981 |2023-08-15 |
-| [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) | MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models | Python | 22067 |2023-08-15 |
-| [text-generation-webui](https://github.com/oobabooga/text-generation-webui) | A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, OPT, and GALACTICA. | Python | 21077 |2023-08-15 |
-| [MetaGPT](https://github.com/geekan/MetaGPT) | 🌟 The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo | Python | 20837 |2023-08-15 |
-| [llama_index](https://github.com/jerryjliu/llama_index) | LlamaIndex (GPT Index) is a data framework for your LLM applications | Python | 20096 |2023-08-15 |
-| [quivr](https://github.com/StanGirard/quivr) | 🧠 Dump all your files and chat with it using your Generative AI Second Brain using LLMs ( GPT 3.5/4, Private, Anthropic, VertexAI ) & Embeddings 🧠  | TypeScript | 19941 |2023-08-15 |
-| [gpt-2](https://github.com/openai/gpt-2) | Code for the paper "Language Models are Unsupervised Multitask Learners" | Python | 19733 |2023-08-14 |
-| [minGPT](https://github.com/karpathy/minGPT) | A minimal PyTorch re-implementation of the OpenAI GPT (Generative Pretrained Transformer) training | Python | 16041 |2023-08-14 |
-| [Mr.-Ranedeer-AI-Tutor](https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor) | A GPT-4 AI Tutor Prompt for customizable personalized learning experiences. | None | 15625 |2023-08-15 |
+| [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT) | An experimental open-source attempt to make GPT-4 fully autonomous. | Python | 146468 |2023-08-16 |
+| [gpt4all](https://github.com/nomic-ai/gpt4all) | gpt4all: an ecosystem of open-source chatbots trained on a massive collections of clean assistant data including code, stories and dialogue | C++ | 50799 |2023-08-16 |
+| [gpt4free](https://github.com/xtekky/gpt4free) | The official gpt4free repository   various collection of powerful language models | Python | 44007 |2023-08-16 |
+| [gpt-engineer](https://github.com/AntonOsika/gpt-engineer) | Specify what you want it to build, the AI asks for clarification, and then builds it. | Python | 41121 |2023-08-16 |
+| [ChatGPT](https://github.com/lencx/ChatGPT) | 🔮 ChatGPT Desktop Application (Mac, Windows and Linux) | Rust | 40212 |2023-08-16 |
+| [ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web) | A well-designed cross-platform ChatGPT UI (Web / PWA / Linux / Win / MacOS). 一键拥有你自己的跨平台 ChatGPT 应用。 | TypeScript | 40195 |2023-08-16 |
+| [gpt_academic](https://github.com/binary-husky/gpt_academic) | 为ChatGPT/GLM提供图形交互界面，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持清华chatglm2等本地模型。兼容复旦MOSS, llama, rwkv, newbing, claude, claude2等 | Python | 39723 |2023-08-16 |
+| [privateGPT](https://github.com/imartinez/privateGPT) | Interact privately with your documents using the power of GPT, 100% privately, no data leaks | Python | 36094 |2023-08-16 |
+| [ChatGPT](https://github.com/acheong08/ChatGPT) | Reverse engineered ChatGPT API | Python | 27116 |2023-08-15 |
+| [AgentGPT](https://github.com/reworkd/AgentGPT) | 🤖 Assemble, configure, and deploy autonomous AI Agents in your browser. | TypeScript | 25769 |2023-08-16 |
+| [nanoGPT](https://github.com/karpathy/nanoGPT) | The simplest, fastest repository for training/finetuning medium-sized GPTs. | Python | 24003 |2023-08-16 |
+| [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) | MiniGPT-4: Enhancing Vision-language Understanding with Advanced Large Language Models | Python | 22075 |2023-08-16 |
+| [MetaGPT](https://github.com/geekan/MetaGPT) | 🌟 The Multi-Agent Framework: Given one line Requirement, return PRD, Design, Tasks, Repo | Python | 21334 |2023-08-16 |
+| [llama_index](https://github.com/jerryjliu/llama_index) | LlamaIndex (GPT Index) is a data framework for your LLM applications | Python | 20133 |2023-08-16 |
+| [quivr](https://github.com/StanGirard/quivr) | 🧠 Dump all your files and chat with it using your Generative AI Second Brain using LLMs ( GPT 3.5/4, Private, Anthropic, VertexAI ) & Embeddings 🧠  | TypeScript | 19996 |2023-08-16 |
+| [gpt-2](https://github.com/openai/gpt-2) | Code for the paper "Language Models are Unsupervised Multitask Learners" | Python | 19735 |2023-08-16 |
+| [minGPT](https://github.com/karpathy/minGPT) | A minimal PyTorch re-implementation of the OpenAI GPT (Generative Pretrained Transformer) training | Python | 16053 |2023-08-15 |
+| [Mr.-Ranedeer-AI-Tutor](https://github.com/JushBJJ/Mr.-Ranedeer-AI-Tutor) | A GPT-4 AI Tutor Prompt for customizable personalized learning experiences. | None | 15639 |2023-08-16 |
 | [gpt-3](https://github.com/openai/gpt-3) | GPT-3: Language Models are Few-Shot Learners | None | 15307 |2023-08-14 |
-| [localGPT](https://github.com/PromtEngineer/localGPT) | Chat with your documents on your local device using GPT models. No data leaves your device and 100% private.  | Python | 14748 |2023-08-15 |
-| [gpt4-pdf-chatbot-langchain](https://github.com/mayooear/gpt4-pdf-chatbot-langchain) | GPT4 & LangChain Chatbot for large PDF docs | TypeScript | 12759 |2023-08-15 |
-| [ChuanhuChatGPT](https://github.com/GaiZhenbiao/ChuanhuChatGPT) | GUI for ChatGPT API and many LLMs | Python | 11984 |2023-08-14 |
-| [KeepChatGPT](https://github.com/xcanwin/KeepChatGPT) | 这是一个ChatGPT的畅聊与增强插件。开源免费。不仅能解决所有报错不再刷新，还有保持活跃、取消审计、克隆对话、净化首页、展示大屏、展示全屏、言无不尽、拦截跟踪、日新月异等多个高级功能。让我们的AI体验无比顺畅、丝滑、高效、简洁。 | JavaScript | 11099 |2023-08-15 |
-| [botpress](https://github.com/botpress/botpress) | The open-source hub to build & deploy GPT/LLM Agents ⚡️ | TypeScript | 10860 |2023-08-14 |
-| [RWKV-LM](https://github.com/BlinkDL/RWKV-LM) | RWKV is an RNN with transformer-level LLM performance. It can be directly trained like a GPT (parallelizable). So it's combining the best of RNN and transformer - great performance, fast inference, saves VRAM, fast training, "infinite" ctx_len, and free sentence embedding. | Python | 9389 |2023-08-15 |
-| [AudioGPT](https://github.com/AIGC-Audio/AudioGPT) | AudioGPT: Understanding and Generating Speech, Music, Sound, and Talking Head | Python | 9071 |2023-08-15 |
-| [BingGPT](https://github.com/dice2o/BingGPT) | Desktop application of new Bing's AI-powered chat (Windows, macOS and Linux) | JavaScript | 8848 |2023-08-15 |
-| [chatGPTBox](https://github.com/josStorer/chatGPTBox) | Integrating ChatGPT into your browser deeply, everything you need is here | JavaScript | 8599 |2023-08-15 |
-| [roomGPT](https://github.com/Nutlope/roomGPT) | Upload a photo of your room to generate your dream room with AI. | TypeScript | 8225 |2023-08-15 |
-| [gpt-neo](https://github.com/EleutherAI/gpt-neo) | An implementation of model parallel GPT-2 and GPT-3-style models using the mesh-tensorflow library. | Python | 7965 |2023-08-14 |
-| [EdgeGPT](https://github.com/acheong08/EdgeGPT) | Reverse engineered API of Microsoft's Bing Chat AI | Python | 7822 |2023-08-15 |
-| [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) | Data-Centric FinGPT.  Open-source for open finance!  Revolutionize 🔥    We'll soon release the trained model. | Jupyter Notebook | 7801 |2023-08-15 |
-| [awesome-chatgpt](https://github.com/humanloop/awesome-chatgpt) | Curated list of awesome tools, demos, docs for ChatGPT and GPT-3 | None | 7759 |2023-08-14 |
-| [GPT2-Chinese](https://github.com/Morizeyao/GPT2-Chinese) | Chinese version of GPT2 training code, using BERT tokenizer. | Python | 7108 |2023-08-15 |
-| [prompt-engineering](https://github.com/brexhq/prompt-engineering) | Tips and tricks for working with Large Language Models like OpenAI's GPT-4. | None | 6793 |2023-08-14 |
-| [h2ogpt](https://github.com/h2oai/h2ogpt) | Private Q&A and summarization of documents+images or chat with local GPT, 100% private, Apache 2.0. Supports LLaMa2, llama.cpp, and more. Demo: https://gpt.h2o.ai/ | Python | 6777 |2023-08-15 |
+| [localGPT](https://github.com/PromtEngineer/localGPT) | Chat with your documents on your local device using GPT models. No data leaves your device and 100% private.  | Python | 14836 |2023-08-16 |
+| [gpt4-pdf-chatbot-langchain](https://github.com/mayooear/gpt4-pdf-chatbot-langchain) | GPT4 & LangChain Chatbot for large PDF docs | TypeScript | 12777 |2023-08-16 |
+| [ChuanhuChatGPT](https://github.com/GaiZhenbiao/ChuanhuChatGPT) | GUI for ChatGPT API and many LLMs | Python | 11993 |2023-08-15 |
+| [KeepChatGPT](https://github.com/xcanwin/KeepChatGPT) | 这是一个ChatGPT的畅聊与增强插件。开源免费。不仅能解决所有报错不再刷新，还有保持活跃、取消审计、克隆对话、净化首页、展示大屏、展示全屏、言无不尽、拦截跟踪、日新月异等多个高级功能。让我们的AI体验无比顺畅、丝滑、高效、简洁。 | JavaScript | 11108 |2023-08-16 |
+| [botpress](https://github.com/botpress/botpress) | The open-source hub to build & deploy GPT/LLM Agents ⚡️ | TypeScript | 10871 |2023-08-16 |
+| [RWKV-LM](https://github.com/BlinkDL/RWKV-LM) | RWKV is an RNN with transformer-level LLM performance. It can be directly trained like a GPT (parallelizable). So it's combining the best of RNN and transformer - great performance, fast inference, saves VRAM, fast training, "infinite" ctx_len, and free sentence embedding. | Python | 9407 |2023-08-16 |
+| [AudioGPT](https://github.com/AIGC-Audio/AudioGPT) | AudioGPT: Understanding and Generating Speech, Music, Sound, and Talking Head | Python | 9077 |2023-08-15 |
+| [BingGPT](https://github.com/dice2o/BingGPT) | Desktop application of new Bing's AI-powered chat (Windows, macOS and Linux) | JavaScript | 8855 |2023-08-16 |
+| [chatGPTBox](https://github.com/josStorer/chatGPTBox) | Integrating ChatGPT into your browser deeply, everything you need is here | JavaScript | 8598 |2023-08-16 |
+| [roomGPT](https://github.com/Nutlope/roomGPT) | Upload a photo of your room to generate your dream room with AI. | TypeScript | 8231 |2023-08-15 |
+| [gpt-neo](https://github.com/EleutherAI/gpt-neo) | An implementation of model parallel GPT-2 and GPT-3-style models using the mesh-tensorflow library. | Python | 7966 |2023-08-15 |
+| [EdgeGPT](https://github.com/acheong08/EdgeGPT) | Reverse engineered API of Microsoft's Bing Chat AI | Python | 7830 |2023-08-15 |
+| [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) | Data-Centric FinGPT.  Open-source for open finance!  Revolutionize 🔥    We'll soon release the trained model. | Jupyter Notebook | 7820 |2023-08-16 |
+| [awesome-chatgpt](https://github.com/humanloop/awesome-chatgpt) | Curated list of awesome tools, demos, docs for ChatGPT and GPT-3 | None | 7761 |2023-08-16 |
+| [GPT2-Chinese](https://github.com/Morizeyao/GPT2-Chinese) | Chinese version of GPT2 training code, using BERT tokenizer. | Python | 7107 |2023-08-15 |
+| [h2ogpt](https://github.com/h2oai/h2ogpt) | Private Q&A and summarization of documents+images or chat with local GPT, 100% private, Apache 2.0. Supports LLaMa2, llama.cpp, and more. Demo: https://gpt.h2o.ai/ | Python | 6807 |2023-08-16 |
+| [prompt-engineering](https://github.com/brexhq/prompt-engineering) | Tips and tricks for working with Large Language Models like OpenAI's GPT-4. | None | 6799 |2023-08-15 |
 | [TensorFlow-2.x-Tutorials](https://github.com/dragen1860/TensorFlow-2.x-Tutorials) | TensorFlow 2.x version's  Tutorials and Examples, including CNN, RNN, GAN, Auto-Encoders, FasterRCNN, GPT, BERT examples, etc. TF 2.0版入门实例代码，实战教程。 | Jupyter Notebook | 6337 |2023-08-14 |
-| [gpt4free-ts](https://github.com/xiangsx/gpt4free-ts) | Providing a free OpenAI GPT-4 API !   This is a replication project for the typescript version of xtekky/gpt4free | TypeScript | 6305 |2023-08-15 |
-| [DocsGPT](https://github.com/arc53/DocsGPT) | GPT-powered chat for documentation, chat with your documents | Python | 6280 |2023-08-14 |
-| [go-openai](https://github.com/sashabaranov/go-openai) | OpenAI ChatGPT, GPT-3, GPT-4, DALL·E, Whisper API wrapper for Go | Go | 6189 |2023-08-14 |
-| [gpt-migrate](https://github.com/0xpayne/gpt-migrate) | Easily migrate your codebase from one framework or language to another. | Python | 6180 |2023-08-15 |
-| [gpt-ai-assistant](https://github.com/memochou1993/gpt-ai-assistant) | OpenAI + LINE + Vercel = GPT AI Assistant | JavaScript | 6077 |2023-08-13 |
-| [DB-GPT](https://github.com/eosphoros-ai/DB-GPT) | Revolutionizing Database Interactions with Private LLM Technology | Python | 5934 |2023-08-15 |
-| [gpt-neox](https://github.com/EleutherAI/gpt-neox) | An implementation of model parallel autoregressive transformers on GPUs, based on the DeepSpeed library. | Python | 5908 |2023-08-14 |
-| [shell_gpt](https://github.com/TheR1D/shell_gpt) | A command-line productivity tool powered by GPT-3 and GPT-4, will help you accomplish your tasks faster and more efficiently. | Python | 5807 |2023-08-15 |
-| [pdfGPT](https://github.com/bhaskatripathi/pdfGPT) | PDF GPT allows you to chat with the contents of your PDF file by using GPT capabilities. The most effective open source solution to turn your pdf files in a chatbot! | Python | 5678 |2023-08-15 |
-| [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT) | An amazing UI for OpenAI's ChatGPT (Website + Windows + MacOS + Linux) | TypeScript | 5580 |2023-08-14 |
-| [WriteGPT](https://github.com/EssayKillerBrain/WriteGPT) | 基于开源GPT2.0的初代创作型人工智能   可扩展、可进化 | Python | 5235 |2023-08-13 |
-| [ChatGPT-Shortcut](https://github.com/rockbenben/ChatGPT-Shortcut) | 🚀💪Maximize your efficiency and productivity, support for English,中文,Español,العربية. 让生产力加倍的ChatGPT快捷指令，无需熟悉提示词，就能轻松搜索、优化和管理Prompts，适应多语言及各种生产效率场景。 | TypeScript | 5044 |2023-08-14 |
-| [GPTCache](https://github.com/zilliztech/GPTCache) | Semantic cache for LLMs. Fully integrated with LangChain and llama_index.  | Python | 4954 |2023-08-14 |
-| [ecoute](https://github.com/SevaSk/ecoute) | Ecoute is a live transcription tool that provides real-time transcripts for both the user's microphone input (You) and the user's speakers output (Speaker) in a textbox. It also generates a suggested response using OpenAI's GPT-3.5 for the user to say based on the live transcription of the conversation. | Python | 4939 |2023-08-14 |
-| [PentestGPT](https://github.com/GreyDGL/PentestGPT) | A GPT-empowered penetration testing tool | Python | 4799 |2023-08-14 |
-| [Feishu-OpenAI](https://github.com/ConnectAI-E/Feishu-OpenAI) | 🎒 飞书  ×（GPT-4 + DALL·E + Whisper）=  飞一般的工作体验  🚀 语音对话、角色扮演、多话题讨论、图片创作、表格分析、文档导出 🚀 | Go | 4763 |2023-08-15 |
-| [freegpt-webui](https://github.com/ramonvc/freegpt-webui) | GPT 3.5/4 with a Chat Web UI. No API key required. | Python | 4713 |2023-08-14 |
-| [awesome-gpt3](https://github.com/elyase/awesome-gpt3) |  | None | 4550 |2023-08-14 |
-| [ChatGPT-Midjourney](https://github.com/Licoy/ChatGPT-Midjourney) | 🍭 一键拥有你自己的 ChatGPT+Midjourney 网页服务   Own your own ChatGPT+Midjourney web service with one click | TypeScript | 4424 |2023-08-15 |
-| [LLaVA](https://github.com/haotian-liu/LLaVA) | Large Language-and-Vision Assistant built towards multimodal GPT-4 level capabilities. | Python | 4420 |2023-08-15 |
-| [gpt-prompt-engineer](https://github.com/mshumer/gpt-prompt-engineer) |  | Jupyter Notebook | 4337 |2023-08-15 |
-| [FasterTransformer](https://github.com/NVIDIA/FasterTransformer) | Transformer related optimization, including BERT, GPT | C++ | 4244 |2023-08-14 |
-| [ChatGPT-wechat-bot](https://github.com/AutumnWhj/ChatGPT-wechat-bot) | ChatGPT for wechat https://github.com/AutumnWhj/ChatGPT-wechat-bot | TypeScript | 4199 |2023-08-14 |
+| [gpt4free-ts](https://github.com/xiangsx/gpt4free-ts) | Providing a free OpenAI GPT-4 API !   This is a replication project for the typescript version of xtekky/gpt4free | TypeScript | 6312 |2023-08-16 |
+| [DocsGPT](https://github.com/arc53/DocsGPT) | GPT-powered chat for documentation, chat with your documents | Python | 6288 |2023-08-16 |
+| [go-openai](https://github.com/sashabaranov/go-openai) | OpenAI ChatGPT, GPT-3, GPT-4, DALL·E, Whisper API wrapper for Go | Go | 6198 |2023-08-15 |
+| [gpt-migrate](https://github.com/0xpayne/gpt-migrate) | Easily migrate your codebase from one framework or language to another. | Python | 6183 |2023-08-16 |
+| [gpt-ai-assistant](https://github.com/memochou1993/gpt-ai-assistant) | OpenAI + LINE + Vercel = GPT AI Assistant | JavaScript | 6082 |2023-08-16 |
+| [DB-GPT](https://github.com/eosphoros-ai/DB-GPT) | Revolutionizing Database Interactions with Private LLM Technology | Python | 5958 |2023-08-16 |
+| [gpt-neox](https://github.com/EleutherAI/gpt-neox) | An implementation of model parallel autoregressive transformers on GPUs, based on the DeepSpeed library. | Python | 5911 |2023-08-15 |
+| [shell_gpt](https://github.com/TheR1D/shell_gpt) | A command-line productivity tool powered by GPT-3 and GPT-4, will help you accomplish your tasks faster and more efficiently. | Python | 5810 |2023-08-15 |
+| [pdfGPT](https://github.com/bhaskatripathi/pdfGPT) | PDF GPT allows you to chat with the contents of your PDF file by using GPT capabilities. The most effective open source solution to turn your pdf files in a chatbot! | Python | 5685 |2023-08-16 |
+| [BetterChatGPT](https://github.com/ztjhz/BetterChatGPT) | An amazing UI for OpenAI's ChatGPT (Website + Windows + MacOS + Linux) | TypeScript | 5598 |2023-08-16 |
+| [WriteGPT](https://github.com/EssayKillerBrain/WriteGPT) | 基于开源GPT2.0的初代创作型人工智能   可扩展、可进化 | Python | 5235 |2023-08-15 |
+| [ChatGPT-Shortcut](https://github.com/rockbenben/ChatGPT-Shortcut) | 🚀💪Maximize your efficiency and productivity, support for English,中文,Español,العربية. 让生产力加倍的ChatGPT快捷指令，无需熟悉提示词，就能轻松搜索、优化和管理Prompts，适应多语言及各种生产效率场景。 | TypeScript | 5054 |2023-08-15 |
+| [GPTCache](https://github.com/zilliztech/GPTCache) | Semantic cache for LLMs. Fully integrated with LangChain and llama_index.  | Python | 4966 |2023-08-16 |
+| [ecoute](https://github.com/SevaSk/ecoute) | Ecoute is a live transcription tool that provides real-time transcripts for both the user's microphone input (You) and the user's speakers output (Speaker) in a textbox. It also generates a suggested response using OpenAI's GPT-3.5 for the user to say based on the live transcription of the conversation. | Python | 4942 |2023-08-15 |
+| [PentestGPT](https://github.com/GreyDGL/PentestGPT) | A GPT-empowered penetration testing tool | Python | 4808 |2023-08-16 |
+| [Feishu-OpenAI](https://github.com/ConnectAI-E/Feishu-OpenAI) | 🎒 飞书  ×（GPT-4 + DALL·E + Whisper）=  飞一般的工作体验  🚀 语音对话、角色扮演、多话题讨论、图片创作、表格分析、文档导出 🚀 | Go | 4767 |2023-08-15 |
+| [freegpt-webui](https://github.com/ramonvc/freegpt-webui) | GPT 3.5/4 with a Chat Web UI. No API key required. | Python | 4737 |2023-08-16 |
+| [awesome-gpt3](https://github.com/elyase/awesome-gpt3) |  | None | 4551 |2023-08-16 |
+| [LLaVA](https://github.com/haotian-liu/LLaVA) | Large Language-and-Vision Assistant built towards multimodal GPT-4 level capabilities. | Python | 4438 |2023-08-16 |
+| [ChatGPT-Midjourney](https://github.com/Licoy/ChatGPT-Midjourney) | 🍭 一键拥有你自己的 ChatGPT+Midjourney 网页服务   Own your own ChatGPT+Midjourney web service with one click | TypeScript | 4435 |2023-08-16 |
+| [gpt-prompt-engineer](https://github.com/mshumer/gpt-prompt-engineer) |  | Jupyter Notebook | 4347 |2023-08-16 |
+| [FasterTransformer](https://github.com/NVIDIA/FasterTransformer) | Transformer related optimization, including BERT, GPT | C++ | 4253 |2023-08-16 |
+| [ChatGPT-wechat-bot](https://github.com/AutumnWhj/ChatGPT-wechat-bot) | ChatGPT for wechat https://github.com/AutumnWhj/ChatGPT-wechat-bot | TypeScript | 4200 |2023-08-15 |
 | [myGPTReader](https://github.com/madawei2699/myGPTReader) | A community-driven way to read and chat with AI bots - powered by chatGPT. | Python | 4166 |2023-08-14 |
-| [PyChatGPT](https://github.com/rawandahmad698/PyChatGPT) | ⚡️ Python client for the unofficial ChatGPT API with auto token regeneration, conversation tracking, proxy support and more. | Python | 4147 |2023-08-14 |
-| [BioGPT](https://github.com/microsoft/BioGPT) |  | Python | 4026 |2023-08-11 |
+| [PyChatGPT](https://github.com/rawandahmad698/PyChatGPT) | ⚡️ Python client for the unofficial ChatGPT API with auto token regeneration, conversation tracking, proxy support and more. | Python | 4148 |2023-08-15 |
+| [BioGPT](https://github.com/microsoft/BioGPT) |  | Python | 4027 |2023-08-16 |
 | [llama-dl](https://github.com/shawwn/llama-dl) | High-speed download of LLaMA, Facebook's 65B parameter GPT model | Shell | 4016 |2023-08-13 |
-| [BibiGPT](https://github.com/JimmyLv/BibiGPT) | BibiGPT v1 · one-Click AI Summary for Audio/Video & Chat with Learning Content: Bilibili   YouTube   Tweet丨TikTok丨Local files   Websites丨Podcasts   Meetings   Lectures, etc. 音视频内容 AI 一键总结 & 对话：哔哩哔哩丨YouTube丨推特丨小红书丨抖音丨网页丨播客丨会议丨本地文件等 (原 BiliGPT 省流神器 & 课代表) | TypeScript | 3970 |2023-08-15 |
-| [BlenderGPT](https://github.com/gd3kr/BlenderGPT) | Use commands in English to control Blender with OpenAI's GPT-4 | Python | 3807 |2023-08-14 |
-| [interviewGuide](https://github.com/NotFound9/interviewGuide) | 推荐免费ChatGPT网站：https://www.lintcode.com/chat-gpt?utm_source=tf-github-NotFound  点此领取7天VIP会员：https://www.lintcode.com/vip/activity/z1qgMH           《大厂面试指北》——包括Java基础、JVM、数据库、mysql、redis、计算机网络、算法、数据结构、操作系统、设计模式、系统设计、框架原理。 | Java | 3807 |2023-08-11 |
-| [GPT_API_free](https://github.com/chatanywhere/GPT_API_free) | Free ChatGPT API Key，免费ChatGPT API，支持GPT4 API（低价），ChatGPT国内可用免费转发API，直连无需代理。可以搭配ChatBox等软件/插件使用，极大降低接口使用成本。国内即可无限制畅快聊天。 | Python | 3806 |2023-08-15 |
-| [ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN) | ChatGPT DAN, Jailbreaks prompt | None | 3739 |2023-08-15 |
-| [GraphGPT](https://github.com/varunshenoy/GraphGPT) | Extrapolating knowledge graphs from unstructured text using GPT-3 🕵️‍♂️ | JavaScript | 3731 |2023-08-14 |
+| [BibiGPT](https://github.com/JimmyLv/BibiGPT) | BibiGPT v1 · one-Click AI Summary for Audio/Video & Chat with Learning Content: Bilibili   YouTube   Tweet丨TikTok丨Local files   Websites丨Podcasts   Meetings   Lectures, etc. 音视频内容 AI 一键总结 & 对话：哔哩哔哩丨YouTube丨推特丨小红书丨抖音丨网页丨播客丨会议丨本地文件等 (原 BiliGPT 省流神器 & 课代表) | TypeScript | 3978 |2023-08-15 |
+| [GPT_API_free](https://github.com/chatanywhere/GPT_API_free) | Free ChatGPT API Key，免费ChatGPT API，支持GPT4 API（低价），ChatGPT国内可用免费转发API，直连无需代理。可以搭配ChatBox等软件/插件使用，极大降低接口使用成本。国内即可无限制畅快聊天。 | Python | 3837 |2023-08-16 |
+| [interviewGuide](https://github.com/NotFound9/interviewGuide) | 推荐免费ChatGPT网站：https://www.lintcode.com/chat-gpt?utm_source=tf-github-NotFound  点此领取7天VIP会员：https://www.lintcode.com/vip/activity/z1qgMH           《大厂面试指北》——包括Java基础、JVM、数据库、mysql、redis、计算机网络、算法、数据结构、操作系统、设计模式、系统设计、框架原理。 | Java | 3809 |2023-08-15 |
+| [BlenderGPT](https://github.com/gd3kr/BlenderGPT) | Use commands in English to control Blender with OpenAI's GPT-4 | Python | 3807 |2023-08-15 |
+| [ChatGPT_DAN](https://github.com/0xk1h0/ChatGPT_DAN) | ChatGPT DAN, Jailbreaks prompt | None | 3745 |2023-08-15 |
+| [GraphGPT](https://github.com/varunshenoy/GraphGPT) | Extrapolating knowledge graphs from unstructured text using GPT-3 🕵️‍♂️ | JavaScript | 3737 |2023-08-16 |
 | [OpenGpt](https://github.com/futantan/OpenGpt) | Create your own ChatGPT App in seconds. | TypeScript | 3607 |2023-08-12 |
-| [awesome-open-gpt](https://github.com/EwingYangs/awesome-open-gpt) | Collection of Open Source Projects Related to GPT，GPT相关开源项目合集🚀、精选🔥🔥 | Python | 3585 |2023-08-15 |
-| [Auto-GPT-Plugins](https://github.com/Significant-Gravitas/Auto-GPT-Plugins) | Plugins for Auto-GPT | Python | 3519 |2023-08-15 |
-| [Awesome-ChatGPT](https://github.com/dalinvip/Awesome-ChatGPT) | ChatGPT资料汇总学习，持续更新...... | None | 3386 |2023-08-14 |
-| [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple) | Python package to easily retrain OpenAI's GPT-2 text-generating model on new texts | Python | 3321 |2023-08-14 |
-| [chatbot](https://github.com/zhaoyingjun/chatbot) | ChatGPT带火了聊天机器人，主流的趋势都调整到了GPT类模式，本项目也与时俱进，会在近期更新GPT类版本。基于本项目和自己的语料可以训练出自己想要的聊天机器人，用于智能客服、在线问答、闲聊等场景。 | Python | 3318 |2023-08-14 |
-| [FastGPT](https://github.com/labring/FastGPT) | FastGPT is a knowledge-based question answering system based on the LLM language model, providing out-of-the-box capabilities for data processing, model invocation, and more. It also allows for complex question answering scenarios through visual workflow orchestration using Flow! | TypeScript | 3315 |2023-08-15 |
-| [ShortGPT](https://github.com/RayVentura/ShortGPT) | 🚀🎬 ShortGPT - Experimental AI framework for automated short/video content creation. | Python | 3305 |2023-08-15 |
+| [awesome-open-gpt](https://github.com/EwingYangs/awesome-open-gpt) | Collection of Open Source Projects Related to GPT，GPT相关开源项目合集🚀、精选🔥🔥 | Python | 3589 |2023-08-16 |
+| [Auto-GPT-Plugins](https://github.com/Significant-Gravitas/Auto-GPT-Plugins) | Plugins for Auto-GPT | Python | 3521 |2023-08-16 |
+| [FastGPT](https://github.com/labring/FastGPT) | FastGPT is a knowledge-based question answering system based on the LLM language model, providing out-of-the-box capabilities for data processing, model invocation, and more. It also allows for complex question answering scenarios through visual workflow orchestration using Flow! | TypeScript | 3389 |2023-08-16 |
+| [Awesome-ChatGPT](https://github.com/dalinvip/Awesome-ChatGPT) | ChatGPT资料汇总学习，持续更新...... | None | 3387 |2023-08-15 |
+| [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple) | Python package to easily retrain OpenAI's GPT-2 text-generating model on new texts | Python | 3323 |2023-08-15 |
+| [chatbot](https://github.com/zhaoyingjun/chatbot) | ChatGPT带火了聊天机器人，主流的趋势都调整到了GPT类模式，本项目也与时俱进，会在近期更新GPT类版本。基于本项目和自己的语料可以训练出自己想要的聊天机器人，用于智能客服、在线问答、闲聊等场景。 | Python | 3318 |2023-08-15 |
+| [ShortGPT](https://github.com/RayVentura/ShortGPT) | 🚀🎬 ShortGPT - Experimental AI framework for automated short/video content creation. | Python | 3314 |2023-08-16 |
 | [ChatGPT-Siri](https://github.com/Yue-Yang/ChatGPT-Siri) | Shortcuts for Siri using ChatGPT API gpt-3.5-turbo & gpt-4 model, supports continuous conversations, configure the API key & save chat records. 由 ChatGPT API gpt-3.5-turbo & gpt-4 模型驱动的智能 Siri，支持连续对话，配置API key，配置系统prompt，保存聊天记录。 | None | 3284 |2023-08-15 |
-| [GPT-4-LLM](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM) | Instruction Tuning with GPT-4 | HTML | 3234 |2023-08-14 |
-| [chart-gpt](https://github.com/whoiskatrin/chart-gpt) | AI tool to build charts based on text input | TypeScript | 3233 |2023-08-15 |
-| [project_modern_ui_ux_gpt3](https://github.com/adrianhajdin/project_modern_ui_ux_gpt3) | Master the creation of Modern UX/UI Websites | CSS | 3212 |2023-08-14 |
+| [GPT-4-LLM](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM) | Instruction Tuning with GPT-4 | HTML | 3239 |2023-08-16 |
+| [chart-gpt](https://github.com/whoiskatrin/chart-gpt) | AI tool to build charts based on text input | TypeScript | 3236 |2023-08-15 |
+| [project_modern_ui_ux_gpt3](https://github.com/adrianhajdin/project_modern_ui_ux_gpt3) | Master the creation of Modern UX/UI Websites | CSS | 3212 |2023-08-16 |
 | [WebGPT](https://github.com/0hq/WebGPT) | Run GPT model on the browser with WebGPU. An implementation of GPT inference in less than ~1500 lines of vanilla Javascript.  | JavaScript | 3160 |2023-08-13 |
-| [gpt-code-clippy](https://github.com/CodedotAl/gpt-code-clippy) | Full description can be found here: https://discuss.huggingface.co/t/pretrain-gpt-neo-for-open-source-github-copilot-model/7678?u=ncoop57 | Python | 3135 |2023-08-14 |
-| [whatsapp-gpt](https://github.com/danielgross/whatsapp-gpt) |  | Go | 2998 |2023-08-12 |
-| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | GPT based autonomous agent that does online comprehensive research on any given topic | Python | 2972 |2023-08-15 |
-| [gpt-code-ui](https://github.com/ricklamers/gpt-code-ui) | An open source implementation of OpenAI's ChatGPT Code interpreter | Python | 2964 |2023-08-15 |
+| [gpt-code-clippy](https://github.com/CodedotAl/gpt-code-clippy) | Full description can be found here: https://discuss.huggingface.co/t/pretrain-gpt-neo-for-open-source-github-copilot-model/7678?u=ncoop57 | Python | 3136 |2023-08-15 |
+| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | GPT based autonomous agent that does online comprehensive research on any given topic | Python | 3028 |2023-08-16 |
+| [whatsapp-gpt](https://github.com/danielgross/whatsapp-gpt) |  | Go | 3000 |2023-08-15 |
+| [gpt-code-ui](https://github.com/ricklamers/gpt-code-ui) | An open source implementation of OpenAI's ChatGPT Code interpreter | Python | 2976 |2023-08-16 |
 | [gpt3-sandbox](https://github.com/shreyashankar/gpt3-sandbox) | The goal of this project is to enable users to create cool web demos using the newly released OpenAI GPT-3 API with just a few lines of Python. | JavaScript | 2888 |2023-08-14 |
 | [backend-GPT](https://github.com/RootbeerComputer/backend-GPT) |  | JavaScript | 2888 |2023-08-10 |
-| [ChatGPT-CodeReview](https://github.com/anc95/ChatGPT-CodeReview) | 🐥 A code review bot powered by ChatGPT | JavaScript | 2840 |2023-08-14 |
-| [ChatGPT-Telegram-Workers](https://github.com/TBXark/ChatGPT-Telegram-Workers) | Deploy your own Telegram ChatGPT bot on Cloudflare Workers with ease. | JavaScript | 2838 |2023-08-13 |
+| [ChatGPT-Telegram-Workers](https://github.com/TBXark/ChatGPT-Telegram-Workers) | Deploy your own Telegram ChatGPT bot on Cloudflare Workers with ease. | JavaScript | 2843 |2023-08-16 |
+| [ChatGPT-CodeReview](https://github.com/anc95/ChatGPT-CodeReview) | 🐥 A code review bot powered by ChatGPT | JavaScript | 2840 |2023-08-15 |
 | [GPT2-chitchat](https://github.com/yangjianxin1/GPT2-chitchat) | GPT2 for Chinese chitchat/用于中文闲聊的GPT2模型(实现了DialoGPT的MMI思想) | Python | 2831 |2023-08-13 |
-| [InternGPT](https://github.com/OpenGVLab/InternGPT) | InternGPT (iGPT) is an open source demo platform where you can easily showcase your AI models. Now it supports DragGAN, ChatGPT, ImageBind, multimodal chat like GPT-4, SAM, interactive image editing, etc. Try it at igpt.opengvlab.com (支持DragGAN、ChatGPT、ImageBind、SAM的在线Demo系统) | Python | 2807 |2023-08-15 |
-| [ChatGPTAPIFree](https://github.com/ayaka14732/ChatGPTAPIFree) | A simple and open-source proxy API that allows you to access OpenAI's ChatGPT API for free! | JavaScript | 2785 |2023-08-14 |
-| [QChatGPT](https://github.com/RockChinQ/QChatGPT) | 😎高稳定性、🐒低耦合、🧩支持插件、适配多种模型的 ChatGPT QQ 机器人🤖   支持 ChatGPT 实时联网搜索   支持 Claude 和 Google Bard | Python | 2734 |2023-08-15 |
-| [ChatGPT_JCM](https://github.com/202252197/ChatGPT_JCM) | OpenAI管理界面，聚合了OpenAI的所有接口进行界面操作(所有模型、图片、音频、微调、文件)等，支持Markdown格式(公式、图表，表格)等，GPT4接口官方只是在申请阶段，后期会一点一点的将OpenAI接口进行接入大家支持一下，微信群号在下方，右上角点个Star，我会一直更新下去，大家一起学习，一起加油，一起努力，一起成长。 | Vue | 2716 |2023-08-14 |
-| [ChatFiles](https://github.com/guangzhengli/ChatFiles) | Document Chatbot — multiple files. Powered by GPT / Embedding. | TypeScript | 2616 |2023-08-14 |
-| [picoGPT](https://github.com/jaymody/picoGPT) | An unnecessarily tiny implementation of GPT-2 in NumPy. | Python | 2515 |2023-08-12 |
-| [GPTQ-for-LLaMa](https://github.com/qwopqwop200/GPTQ-for-LLaMa) | 4 bits quantization of LLaMA using GPTQ | Python | 2495 |2023-08-14 |
+| [InternGPT](https://github.com/OpenGVLab/InternGPT) | InternGPT (iGPT) is an open source demo platform where you can easily showcase your AI models. Now it supports DragGAN, ChatGPT, ImageBind, multimodal chat like GPT-4, SAM, interactive image editing, etc. Try it at igpt.opengvlab.com (支持DragGAN、ChatGPT、ImageBind、SAM的在线Demo系统) | Python | 2809 |2023-08-15 |
+| [ChatGPTAPIFree](https://github.com/ayaka14732/ChatGPTAPIFree) | A simple and open-source proxy API that allows you to access OpenAI's ChatGPT API for free! | JavaScript | 2791 |2023-08-15 |
+| [QChatGPT](https://github.com/RockChinQ/QChatGPT) | 😎高稳定性、🐒低耦合、🧩支持插件、适配多种模型的 ChatGPT QQ 机器人🤖   支持 ChatGPT 实时联网搜索   支持 Claude 和 Google Bard | Python | 2747 |2023-08-16 |
+| [ChatGPT_JCM](https://github.com/202252197/ChatGPT_JCM) | OpenAI管理界面，聚合了OpenAI的所有接口进行界面操作(所有模型、图片、音频、微调、文件)等，支持Markdown格式(公式、图表，表格)等，GPT4接口官方只是在申请阶段，后期会一点一点的将OpenAI接口进行接入大家支持一下，微信群号在下方，右上角点个Star，我会一直更新下去，大家一起学习，一起加油，一起努力，一起成长。 | Vue | 2717 |2023-08-15 |
+| [ChatFiles](https://github.com/guangzhengli/ChatFiles) | Document Chatbot — multiple files. Powered by GPT / Embedding. | TypeScript | 2618 |2023-08-15 |
+| [picoGPT](https://github.com/jaymody/picoGPT) | An unnecessarily tiny implementation of GPT-2 in NumPy. | Python | 2523 |2023-08-15 |
+| [GPTQ-for-LLaMa](https://github.com/qwopqwop200/GPTQ-for-LLaMa) | 4 bits quantization of LLaMA using GPTQ | Python | 2498 |2023-08-16 |
+| [mini-agi](https://github.com/muellerberndt/mini-agi) | MiniAGI is a minimal general-purpose autonomous agent based on GPT-3.5 / GPT-4. Can analyze stock prices, perform network security tests, create art, and order pizza. | Python | 2462 |2023-08-15 |
